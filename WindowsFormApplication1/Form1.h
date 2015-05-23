@@ -41,6 +41,7 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::Button^  button3;
 	private: System::Windows::Forms::Button^  button4;
 	private: System::Windows::Forms::Button^  button5;
+	private: System::Windows::Forms::Label^  label1;
 
 	private:
 		/// <summary>
@@ -60,6 +61,7 @@ namespace WindowsFormApplication1 {
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -108,11 +110,24 @@ namespace WindowsFormApplication1 {
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &Form1::button5_Click);
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->label1->ForeColor = System::Drawing::SystemColors::MenuHighlight;
+			this->label1->Location = System::Drawing::Point(69, 80);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(147, 31);
+			this->label1->TabIndex = 5;
+			this->label1->Text = L"Calculator";
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(284, 261);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
@@ -121,6 +136,7 @@ namespace WindowsFormApplication1 {
 			this->Name = L"Form1";
 			this->Text = L"Calculator";
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
