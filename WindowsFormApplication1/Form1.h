@@ -1,5 +1,6 @@
 #pragma once
 #include "Form2.h"
+#include "Form3.h"
 
 namespace WindowsFormApplication1 {
 
@@ -42,6 +43,7 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::Button^  button4;
 	private: System::Windows::Forms::Button^  button5;
 	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::Button^  button6;
 
 	private:
 		/// <summary>
@@ -62,6 +64,7 @@ namespace WindowsFormApplication1 {
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -72,6 +75,7 @@ namespace WindowsFormApplication1 {
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Calculator";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
 			// 
 			// button2
 			// 
@@ -102,7 +106,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button5
 			// 
-			this->button5->Location = System::Drawing::Point(105, 226);
+			this->button5->Location = System::Drawing::Point(66, 226);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(75, 23);
 			this->button5->TabIndex = 4;
@@ -122,11 +126,22 @@ namespace WindowsFormApplication1 {
 			this->label1->TabIndex = 5;
 			this->label1->Text = L"Calculator";
 			// 
+			// button6
+			// 
+			this->button6->Location = System::Drawing::Point(147, 226);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(75, 23);
+			this->button6->TabIndex = 6;
+			this->button6->Text = L"Exit";
+			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &Form1::button6_Click);
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(284, 261);
+			this->Controls->Add(this->button6);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
@@ -144,6 +159,13 @@ namespace WindowsFormApplication1 {
 				 Form2^ form2 = gcnew Form2;
 				 form2->ShowDialog();
 	}
+private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) {
+			 this->Close(); 
+}
+private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Form3^ form3 = gcnew Form3;
+			 form3->Show();
+}
 };
 }
-
+ 
