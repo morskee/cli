@@ -1,4 +1,5 @@
 #pragma once
+#include "Form2.h"
 
 namespace WindowsFormApplication1 {
 
@@ -34,6 +35,12 @@ namespace WindowsFormApplication1 {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Button^  button1;
+	protected:
+	private: System::Windows::Forms::Button^  button2;
+	private: System::Windows::Forms::Button^  button3;
+	private: System::Windows::Forms::Button^  button4;
+	private: System::Windows::Forms::Button^  button5;
 
 	private:
 		/// <summary>
@@ -48,13 +55,79 @@ namespace WindowsFormApplication1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"Form1";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(12, 143);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"Calculator";
+			this->button1->UseVisualStyleBackColor = true;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(197, 143);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 1;
+			this->button2->Text = L"Matrix 2x2";
+			this->button2->UseVisualStyleBackColor = true;
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(12, 172);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(75, 23);
+			this->button3->TabIndex = 2;
+			this->button3->Text = L"Matrix 3x3";
+			this->button3->UseVisualStyleBackColor = true;
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(197, 172);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(75, 23);
+			this->button4->TabIndex = 3;
+			this->button4->Text = L"Radian";
+			this->button4->UseVisualStyleBackColor = true;
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(105, 226);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(75, 23);
+			this->button5->TabIndex = 4;
+			this->button5->Text = L"Info";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &Form1::button5_Click);
+			// 
+			// Form1
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(284, 261);
+			this->Controls->Add(this->button5);
+			this->Controls->Add(this->button4);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->button2);
+			this->Controls->Add(this->button1);
+			this->Name = L"Form1";
+			this->Text = L"Calculator";
+			this->ResumeLayout(false);
+
 		}
 #pragma endregion
-	};
+	private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
+				 Form2^ form2 = gcnew Form2;
+				 form2->ShowDialog();
+	}
+};
 }
 
