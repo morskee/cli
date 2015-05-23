@@ -1,6 +1,7 @@
 #pragma once
 #include "Form2.h"
 #include "Form3.h"
+#include "Form4.h"
 
 namespace WindowsFormApplication1 {
 
@@ -103,6 +104,7 @@ namespace WindowsFormApplication1 {
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"Radian";
 			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &Form1::button4_Click);
 			// 
 			// button5
 			// 
@@ -166,6 +168,10 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 			 Form3^ form3 = gcnew Form3;
 			 form3->Show();
 }
+private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+			 Form4^ form4 = gcnew Form4;
+			 form4->Show();
+}
 };
 }
- 
+  
