@@ -191,11 +191,12 @@ namespace WindowsFormApplication1 {
 
 		}
 #pragma endregion
+		//Radian
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 label2->Text = (Double::Parse(textBox1->Text) * 180).ToString();
+			label2->Text = (Double::Parse(textBox1->Text) * 180).ToString();
 	}
-private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
-			 label4->Text = (Double::Parse(textBox2->Text) / 180).ToString();
+	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+			label4->Text = (Double::Parse(textBox2->Text) / 180).ToString();
 }
 };
 }

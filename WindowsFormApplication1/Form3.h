@@ -194,6 +194,7 @@ namespace WindowsFormApplication1 {
 
 		}
 #pragma endregion
+		//Radian
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 				 if (radioButton1->Checked)
 					 label2->Text = (Double::Parse(textBox1->Text) + Double::Parse(textBox2->Text)).ToString();

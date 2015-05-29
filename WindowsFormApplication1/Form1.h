@@ -2,6 +2,8 @@
 #include "Form2.h"
 #include "Form3.h"
 #include "Form4.h"
+#include "Form5.h"
+#include "Form6.h"
 
 namespace WindowsFormApplication1 {
 
@@ -95,6 +97,7 @@ namespace WindowsFormApplication1 {
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Matrix 3x3";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &Form1::button3_Click);
 			// 
 			// button4
 			// 
@@ -152,25 +155,37 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->button1);
 			this->Name = L"Form1";
 			this->Text = L"Calculator";
+			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
-				 Form2^ form2 = gcnew Form2;
-				 form2->ShowDialog();
+			//Information
+			Form2^ form2 = gcnew Form2;
+			form2->ShowDialog();
 	}
-private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) {
+	private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) {
+			 //Exit
 			 this->Close(); 
-}
-private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+			 //Calculator
 			 Form3^ form3 = gcnew Form3;
 			 form3->Show();
-}
-private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+	private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
+			 //Radian
 			 Form4^ form4 = gcnew Form4;
 			 form4->Show();
+	}
+	private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+			//Matrix 3 x 3
+			Form5^ form5 = gcnew Form5;
+			form5->Show();
+	}
+private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }
