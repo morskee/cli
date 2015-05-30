@@ -88,6 +88,7 @@ namespace WindowsFormApplication1 {
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Matrix 2x2";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
 			// 
 			// button3
 			// 
@@ -155,7 +156,6 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->button1);
 			this->Name = L"Form1";
 			this->Text = L"Calculator";
-			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -185,7 +185,10 @@ namespace WindowsFormApplication1 {
 			Form5^ form5 = gcnew Form5;
 			form5->Show();
 	}
-private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
+	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+			 //Matrix 2 x 2
+			 Form6^ form6 = gcnew Form6;
+			 form6->Show();
 }
 };
 }

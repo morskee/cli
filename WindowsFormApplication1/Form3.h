@@ -45,6 +45,7 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::Button^  button2;
 
 	private:
 		/// <summary>
@@ -62,13 +63,14 @@ namespace WindowsFormApplication1 {
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -99,27 +101,16 @@ namespace WindowsFormApplication1 {
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Options";
 			// 
-			// radioButton1
+			// radioButton4
 			// 
-			this->radioButton1->AutoSize = true;
-			this->radioButton1->Location = System::Drawing::Point(3, 16);
-			this->radioButton1->Name = L"radioButton1";
-			this->radioButton1->Size = System::Drawing::Size(63, 17);
-			this->radioButton1->TabIndex = 0;
-			this->radioButton1->TabStop = true;
-			this->radioButton1->Text = L"Addition";
-			this->radioButton1->UseVisualStyleBackColor = true;
-			// 
-			// radioButton2
-			// 
-			this->radioButton2->AutoSize = true;
-			this->radioButton2->Location = System::Drawing::Point(3, 39);
-			this->radioButton2->Name = L"radioButton2";
-			this->radioButton2->Size = System::Drawing::Size(79, 17);
-			this->radioButton2->TabIndex = 1;
-			this->radioButton2->TabStop = true;
-			this->radioButton2->Text = L"Subtraction";
-			this->radioButton2->UseVisualStyleBackColor = true;
+			this->radioButton4->AutoSize = true;
+			this->radioButton4->Location = System::Drawing::Point(3, 85);
+			this->radioButton4->Name = L"radioButton4";
+			this->radioButton4->Size = System::Drawing::Size(62, 17);
+			this->radioButton4->TabIndex = 3;
+			this->radioButton4->TabStop = true;
+			this->radioButton4->Text = L"Division";
+			this->radioButton4->UseVisualStyleBackColor = true;
 			// 
 			// radioButton3
 			// 
@@ -132,16 +123,27 @@ namespace WindowsFormApplication1 {
 			this->radioButton3->Text = L"Multiplication";
 			this->radioButton3->UseVisualStyleBackColor = true;
 			// 
-			// radioButton4
+			// radioButton2
 			// 
-			this->radioButton4->AutoSize = true;
-			this->radioButton4->Location = System::Drawing::Point(3, 85);
-			this->radioButton4->Name = L"radioButton4";
-			this->radioButton4->Size = System::Drawing::Size(62, 17);
-			this->radioButton4->TabIndex = 3;
-			this->radioButton4->TabStop = true;
-			this->radioButton4->Text = L"Division";
-			this->radioButton4->UseVisualStyleBackColor = true;
+			this->radioButton2->AutoSize = true;
+			this->radioButton2->Location = System::Drawing::Point(3, 39);
+			this->radioButton2->Name = L"radioButton2";
+			this->radioButton2->Size = System::Drawing::Size(79, 17);
+			this->radioButton2->TabIndex = 1;
+			this->radioButton2->TabStop = true;
+			this->radioButton2->Text = L"Subtraction";
+			this->radioButton2->UseVisualStyleBackColor = true;
+			// 
+			// radioButton1
+			// 
+			this->radioButton1->AutoSize = true;
+			this->radioButton1->Location = System::Drawing::Point(3, 16);
+			this->radioButton1->Name = L"radioButton1";
+			this->radioButton1->Size = System::Drawing::Size(63, 17);
+			this->radioButton1->TabIndex = 0;
+			this->radioButton1->TabStop = true;
+			this->radioButton1->Text = L"Addition";
+			this->radioButton1->UseVisualStyleBackColor = true;
 			// 
 			// label1
 			// 
@@ -174,11 +176,22 @@ namespace WindowsFormApplication1 {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &Form3::button1_Click);
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(52, 106);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 6;
+			this->button2->Text = L"Clear";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &Form3::button2_Click);
+			// 
 			// Form3
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(284, 261);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
@@ -194,7 +207,7 @@ namespace WindowsFormApplication1 {
 
 		}
 #pragma endregion
-		//Radian
+		//Calculator
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 				 if (radioButton1->Checked)
 					 label2->Text = (Double::Parse(textBox1->Text) + Double::Parse(textBox2->Text)).ToString();
@@ -205,5 +218,11 @@ namespace WindowsFormApplication1 {
 				 if (radioButton4->Checked)
 					 label2->Text = (Double::Parse(textBox1->Text) / Double::Parse(textBox2->Text)).ToString();
 	}
+private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+			 textBox1->Text = "";
+			 textBox2->Text = "";
+			 label2->Text = "";
+
+}
 };
 }

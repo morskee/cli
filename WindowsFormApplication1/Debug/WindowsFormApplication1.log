@@ -1,26 +1,25 @@
-﻿Build started 29.05.2015 23:57:42.
+﻿Build started 30.05.2015 12:00:26.
      1>Project "C:\Users\Morskee\Documents\GitHub\WindowsFormApplication1\cli\WindowsFormApplication1\WindowsFormApplication1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\WindowsFormApplication1.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Form5.cpp Form6.cpp WindowsFormApplication1.cpp
          Form5.cpp
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(195): error C3867: 'System::Double::ToString': function call missing argument list; use '&System::Double::ToString' to create a pointer to member
          Form6.cpp
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(195): error C3867: 'System::Double::ToString': function call missing argument list; use '&System::Double::ToString' to create a pointer to member
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(197): error C2065: 'Form6' : undeclared identifier
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(197): error C2065: 'form6' : undeclared identifier
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(197): error C2061: syntax error : identifier 'Form6'
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(198): error C2065: 'form6' : undeclared identifier
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(198): error C2227: left of '->label2' must point to class/struct/union/generic type
-                 type is 'unknown-type'
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(198): error C2227: left of '->Text' must point to class/struct/union/generic type
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(199): error C2065: 'form6' : undeclared identifier
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(199): error C2227: left of '->ShowDialog' must point to class/struct/union/generic type
-                 type is 'unknown-type'
          WindowsFormApplication1.cpp
-     1>c:\users\morskee\documents\github\windowsformapplication1\cli\windowsformapplication1\Form5.h(195): error C3867: 'System::Double::ToString': function call missing argument list; use '&System::Double::ToString' to create a pointer to member
          Generating Code...
-     1>Done Building Project "C:\Users\Morskee\Documents\GitHub\WindowsFormApplication1\cli\WindowsFormApplication1\WindowsFormApplication1.vcxproj" (Build target(s)) -- FAILED.
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Morskee\Documents\GitHub\WindowsFormApplication1\cli\Debug\WindowsFormApplication1.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\WindowsFormApplication1.Form1.resources /ASSEMBLYRESOURCE:Debug\WindowsFormApplication1.Form2.resources /ASSEMBLYRESOURCE:Debug\WindowsFormApplication1.Form3.resources /ASSEMBLYRESOURCE:Debug\WindowsFormApplication1.Form4.resources /ASSEMBLYRESOURCE:Debug\WindowsFormApplication1.Form5.resources /ASSEMBLYRESOURCE:Debug\WindowsFormApplication1.Form6.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Morskee\Documents\GitHub\WindowsFormApplication1\cli\Debug\WindowsFormApplication1.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\Form2.obj
+         Debug\Form3.obj
+         Debug\Form4.obj
+         Debug\Form5.obj
+         Debug\Form6.obj
+         Debug\stdafx.obj
+         Debug\WindowsFormApplication1.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         WindowsFormApplication1.vcxproj -> C:\Users\Morskee\Documents\GitHub\WindowsFormApplication1\cli\Debug\WindowsFormApplication1.exe
+     1>Done Building Project "C:\Users\Morskee\Documents\GitHub\WindowsFormApplication1\cli\WindowsFormApplication1\WindowsFormApplication1.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.57
+Time Elapsed 00:00:01.07

@@ -44,12 +44,12 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::TextBox^  textBox7;
 	private: System::Windows::Forms::TextBox^  textBox8;
 	private: System::Windows::Forms::TextBox^  textBox9;
-	public: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::Button^  button1;
+
 	private:
 
-	public: System::Windows::Forms::Label^  label1;
-	private:
-
+	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::Button^  button2;
 	protected:
 
 	private:
@@ -76,6 +76,7 @@ namespace WindowsFormApplication1 {
 			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// textBox1
@@ -143,7 +144,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(236, 95);
+			this->button1->Location = System::Drawing::Point(75, 90);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 9;
@@ -154,18 +155,28 @@ namespace WindowsFormApplication1 {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->ForeColor = System::Drawing::Color::Transparent;
-			this->label1->Location = System::Drawing::Point(257, 95);
+			this->label1->Location = System::Drawing::Point(171, 116);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(35, 13);
+			this->label1->Size = System::Drawing::Size(0, 13);
 			this->label1->TabIndex = 10;
-			this->label1->Text = L"label1";
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(177, 90);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 23);
+			this->button2->TabIndex = 11;
+			this->button2->Text = L"Clear";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &Form5::button2_Click);
 			// 
 			// Form5
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(336, 139);
+			this->ClientSize = System::Drawing::Size(334, 138);
+			this->Controls->Add(this->button2);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox9);
 			this->Controls->Add(this->textBox8);
@@ -176,7 +187,6 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->label1);
 			this->Name = L"Form5";
 			this->Text = L"Form5";
 			this->ResumeLayout(false);
@@ -185,18 +195,25 @@ namespace WindowsFormApplication1 {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 
 				 label1->Text = (Double::Parse(textBox1->Text) * Double::Parse(textBox5->Text) * Double::Parse(textBox9->Text) +
 					 Double::Parse(textBox4->Text) * Double::Parse(textBox8->Text) * Double::Parse(textBox3->Text) +
 					 Double::Parse(textBox7->Text) * Double::Parse(textBox2->Text) * Double::Parse(textBox6->Text) -
 					 Double::Parse(textBox3->Text) * Double::Parse(textBox5->Text) * Double::Parse(textBox7->Text) -
 					 Double::Parse(textBox6->Text) * Double::Parse(textBox8->Text) * Double::Parse(textBox1->Text) -
 					 Double::Parse(textBox9->Text) * Double::Parse(textBox2->Text) * Double::Parse(textBox4->Text)
-					 ).ToString;
-
-				 Form6^ form6 = gcnew Form6;
-				 form6->label2->Text = label1->Text;
-				 form6->ShowDialog();
+					 ).ToString();
 	}
+private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+			 textBox1->Text = "";
+			 textBox2->Text = "";
+			 textBox3->Text = "";
+			 textBox4->Text = "";
+			 textBox5->Text = "";
+			 textBox6->Text = "";
+			 textBox7->Text = "";
+			 textBox8->Text = "";
+			 textBox9->Text = "";
+			 label1->Text = "";
+}
 };
 }
