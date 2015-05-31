@@ -51,6 +51,7 @@ namespace WindowsFormApplication1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form7::typeid));
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
@@ -62,7 +63,7 @@ namespace WindowsFormApplication1 {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
 			this->label2->ForeColor = System::Drawing::SystemColors::Window;
-			this->label2->Location = System::Drawing::Point(12, 8);
+			this->label2->Location = System::Drawing::Point(13, 8);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(76, 25);
 			this->label2->TabIndex = 1;
@@ -70,7 +71,7 @@ namespace WindowsFormApplication1 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(202, 9);
+			this->button1->Location = System::Drawing::Point(202, 7);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 2;
@@ -95,6 +96,7 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label2);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Form7";
 			this->Text = L"Matrix 3x3";
 			this->ResumeLayout(false);

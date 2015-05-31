@@ -60,6 +60,7 @@ namespace WindowsFormApplication1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form3::typeid));
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
@@ -207,6 +208,7 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Form3";
 			this->Text = L"Calculator";
 			this->groupBox1->ResumeLayout(false);

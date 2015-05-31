@@ -53,6 +53,7 @@ namespace WindowsFormApplication1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form2::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -62,12 +63,12 @@ namespace WindowsFormApplication1 {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
 			this->label1->ForeColor = System::Drawing::SystemColors::MenuHighlight;
-			this->label1->Location = System::Drawing::Point(68, 88);
+			this->label1->Location = System::Drawing::Point(55, 101);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(147, 31);
+			this->label1->Size = System::Drawing::Size(172, 37);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Calculator";
 			// 
@@ -75,7 +76,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->label2->AutoSize = true;
 			this->label2->ForeColor = System::Drawing::SystemColors::Window;
-			this->label2->Location = System::Drawing::Point(121, 119);
+			this->label2->Location = System::Drawing::Point(119, 138);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(40, 13);
 			this->label2->TabIndex = 1;
@@ -111,6 +112,7 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Form2";
 			this->Text = L"Information";
 			this->ResumeLayout(false);

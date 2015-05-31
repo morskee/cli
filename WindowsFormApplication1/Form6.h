@@ -56,6 +56,7 @@ namespace WindowsFormApplication1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form6::typeid));
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
@@ -125,6 +126,7 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Form6";
 			this->Text = L"Matrix 2x2";
 			this->ResumeLayout(false);

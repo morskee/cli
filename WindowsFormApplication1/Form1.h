@@ -61,6 +61,7 @@ namespace WindowsFormApplication1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -123,12 +124,12 @@ namespace WindowsFormApplication1 {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
 			this->label1->ForeColor = System::Drawing::SystemColors::MenuHighlight;
-			this->label1->Location = System::Drawing::Point(69, 80);
+			this->label1->Location = System::Drawing::Point(58, 88);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(147, 31);
+			this->label1->Size = System::Drawing::Size(172, 37);
 			this->label1->TabIndex = 5;
 			this->label1->Text = L"Calculator";
 			// 
@@ -155,6 +156,7 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Form1";
 			this->Text = L"Calculator";
 			this->ResumeLayout(false);

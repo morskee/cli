@@ -45,16 +45,6 @@ namespace WindowsFormApplication1 {
 	public: System::Windows::Forms::TextBox^  textBox7;
 	public: System::Windows::Forms::TextBox^  textBox8;
 	public: System::Windows::Forms::TextBox^  textBox9;
-
-	protected:
-
-
-
-
-
-
-
-
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::Label^  label1;
 
@@ -73,6 +63,7 @@ namespace WindowsFormApplication1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Form5::typeid));
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
@@ -190,6 +181,7 @@ namespace WindowsFormApplication1 {
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->label1);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Form5";
 			this->Text = L"Matrix 3x3";
 			this->ResumeLayout(false);
