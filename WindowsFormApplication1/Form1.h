@@ -4,6 +4,7 @@
 #include "Form4.h"
 #include "Form5.h"
 #include "Form6.h"
+#include "Form7.h"
 
 namespace WindowsFormApplication1 {
 
@@ -40,7 +41,6 @@ namespace WindowsFormApplication1 {
 			}
 		}
 	private: System::Windows::Forms::Button^  button1;
-	protected:
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Button^  button3;
 	private: System::Windows::Forms::Button^  button4;
@@ -146,6 +146,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::WindowFrame;
 			this->ClientSize = System::Drawing::Size(284, 261);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->label1);

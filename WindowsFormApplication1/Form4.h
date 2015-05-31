@@ -114,6 +114,7 @@ namespace WindowsFormApplication1 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
+			this->label1->ForeColor = System::Drawing::SystemColors::Window;
 			this->label1->Location = System::Drawing::Point(9, 111);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(86, 25);
@@ -125,6 +126,7 @@ namespace WindowsFormApplication1 {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
+			this->label2->ForeColor = System::Drawing::SystemColors::Window;
 			this->label2->Location = System::Drawing::Point(14, 149);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(0, 24);
@@ -135,6 +137,7 @@ namespace WindowsFormApplication1 {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
+			this->label3->ForeColor = System::Drawing::SystemColors::Window;
 			this->label3->Location = System::Drawing::Point(218, 111);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(86, 25);
@@ -146,6 +149,7 @@ namespace WindowsFormApplication1 {
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
+			this->label4->ForeColor = System::Drawing::SystemColors::Window;
 			this->label4->Location = System::Drawing::Point(219, 149);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(0, 24);
@@ -154,11 +158,12 @@ namespace WindowsFormApplication1 {
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
-			this->label5->Location = System::Drawing::Point(120, 21);
+			this->label5->ForeColor = System::Drawing::SystemColors::Window;
+			this->label5->Location = System::Drawing::Point(120, 16);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(19, 20);
+			this->label5->Size = System::Drawing::Size(25, 25);
 			this->label5->TabIndex = 8;
 			this->label5->Text = L"π";
 			// 
@@ -167,6 +172,7 @@ namespace WindowsFormApplication1 {
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
+			this->label6->ForeColor = System::Drawing::SystemColors::Window;
 			this->label6->Location = System::Drawing::Point(282, 149);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(22, 24);
@@ -186,11 +192,12 @@ namespace WindowsFormApplication1 {
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
+			this->label7->ForeColor = System::Drawing::SystemColors::Window;
 			this->label7->Location = System::Drawing::Point(287, 16);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(17, 24);
+			this->label7->Size = System::Drawing::Size(21, 25);
 			this->label7->TabIndex = 11;
 			this->label7->Text = L"°";
 			// 
@@ -198,6 +205,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::WindowFrame;
 			this->ClientSize = System::Drawing::Size(314, 194);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->button3);

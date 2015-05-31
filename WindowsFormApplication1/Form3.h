@@ -90,10 +90,12 @@ namespace WindowsFormApplication1 {
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->BackColor = System::Drawing::SystemColors::WindowFrame;
 			this->groupBox1->Controls->Add(this->radioButton4);
 			this->groupBox1->Controls->Add(this->radioButton3);
 			this->groupBox1->Controls->Add(this->radioButton2);
 			this->groupBox1->Controls->Add(this->radioButton1);
+			this->groupBox1->ForeColor = System::Drawing::SystemColors::Window;
 			this->groupBox1->Location = System::Drawing::Point(172, 12);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(100, 111);
@@ -104,6 +106,7 @@ namespace WindowsFormApplication1 {
 			// radioButton4
 			// 
 			this->radioButton4->AutoSize = true;
+			this->radioButton4->ForeColor = System::Drawing::SystemColors::Window;
 			this->radioButton4->Location = System::Drawing::Point(3, 85);
 			this->radioButton4->Name = L"radioButton4";
 			this->radioButton4->Size = System::Drawing::Size(62, 17);
@@ -115,6 +118,7 @@ namespace WindowsFormApplication1 {
 			// radioButton3
 			// 
 			this->radioButton3->AutoSize = true;
+			this->radioButton3->ForeColor = System::Drawing::SystemColors::Window;
 			this->radioButton3->Location = System::Drawing::Point(3, 62);
 			this->radioButton3->Name = L"radioButton3";
 			this->radioButton3->Size = System::Drawing::Size(86, 17);
@@ -126,6 +130,7 @@ namespace WindowsFormApplication1 {
 			// radioButton2
 			// 
 			this->radioButton2->AutoSize = true;
+			this->radioButton2->ForeColor = System::Drawing::SystemColors::Window;
 			this->radioButton2->Location = System::Drawing::Point(3, 39);
 			this->radioButton2->Name = L"radioButton2";
 			this->radioButton2->Size = System::Drawing::Size(79, 17);
@@ -137,6 +142,7 @@ namespace WindowsFormApplication1 {
 			// radioButton1
 			// 
 			this->radioButton1->AutoSize = true;
+			this->radioButton1->ForeColor = System::Drawing::SystemColors::Window;
 			this->radioButton1->Location = System::Drawing::Point(3, 16);
 			this->radioButton1->Name = L"radioButton1";
 			this->radioButton1->Size = System::Drawing::Size(63, 17);
@@ -150,6 +156,7 @@ namespace WindowsFormApplication1 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
+			this->label1->ForeColor = System::Drawing::SystemColors::Window;
 			this->label1->Location = System::Drawing::Point(12, 132);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(86, 25);
@@ -161,6 +168,7 @@ namespace WindowsFormApplication1 {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
+			this->label2->ForeColor = System::Drawing::SystemColors::Window;
 			this->label2->Location = System::Drawing::Point(12, 157);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(0, 25);
@@ -190,7 +198,8 @@ namespace WindowsFormApplication1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 261);
+			this->BackColor = System::Drawing::SystemColors::WindowFrame;
+			this->ClientSize = System::Drawing::Size(284, 212);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label2);

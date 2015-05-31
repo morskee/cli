@@ -4,6 +4,8 @@
   WindowsFormApplication1.Form4.resources - Embedded, ContainedInManifestFile, 
   WindowsFormApplication1.Form5.resources - Embedded, ContainedInManifestFile, 
   WindowsFormApplication1.Form6.resources - Embedded, ContainedInManifestFile, 
+  WindowsFormApplication1.Form7.resources - Embedded, ContainedInManifestFile, 
+  WindowsFormApplication1.Form8.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly WindowsFormApplication1, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=SHA1, flags=PublicKey
@@ -28,10 +30,34 @@ Class WindowsFormApplication1.Form3: AutoLayout, AnsiClass, Class, Public, Befor
 Class WindowsFormApplication1.Form4: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-Class WindowsFormApplication1.Form6: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+Class WindowsFormApplication1.Form7: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.Button button1 : Public
+  Methods:
+    button1_Click(Object, EventArgs): PrivateScope, Public, HideBySig
 Class WindowsFormApplication1.Form5: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.TextBox textBox1 : Public
+    System.Windows.Forms.TextBox textBox2 : Public
+    System.Windows.Forms.TextBox textBox3 : Public
+    System.Windows.Forms.TextBox textBox4 : Public
+    System.Windows.Forms.TextBox textBox5 : Public
+    System.Windows.Forms.TextBox textBox6 : Public
+    System.Windows.Forms.TextBox textBox7 : Public
+    System.Windows.Forms.TextBox textBox8 : Public
+    System.Windows.Forms.TextBox textBox9 : Public
+Class WindowsFormApplication1.Form8: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Button button1 : Public
+    System.Windows.Forms.Label label2 : Public
+Class WindowsFormApplication1.Form6: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class WindowsFormApplication1.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

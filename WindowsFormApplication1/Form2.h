@@ -74,6 +74,7 @@ namespace WindowsFormApplication1 {
 			// label2
 			// 
 			this->label2->AutoSize = true;
+			this->label2->ForeColor = System::Drawing::SystemColors::Window;
 			this->label2->Location = System::Drawing::Point(121, 119);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(40, 13);
@@ -83,6 +84,7 @@ namespace WindowsFormApplication1 {
 			// label3
 			// 
 			this->label3->AutoSize = true;
+			this->label3->ForeColor = System::Drawing::SystemColors::Window;
 			this->label3->Location = System::Drawing::Point(12, 226);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(78, 13);
@@ -92,6 +94,7 @@ namespace WindowsFormApplication1 {
 			// label4
 			// 
 			this->label4->AutoSize = true;
+			this->label4->ForeColor = System::Drawing::SystemColors::Window;
 			this->label4->Location = System::Drawing::Point(12, 239);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(143, 13);
@@ -102,6 +105,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::WindowFrame;
 			this->ClientSize = System::Drawing::Size(284, 261);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
